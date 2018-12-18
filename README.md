@@ -42,7 +42,8 @@ MyList.prepend({
 
 ## installation
 
-This package will register itself onto the keystone prototype. Just require (or import) it:
+This package will register itself onto the prototype of the given keystone instance. Just require (or import) it and pass it `keystone`:
 ```
-require('keystone-list-prepend');
+const keystone = require('keystone');
+require('keystone-list-prepend')(keystone);
 ```
