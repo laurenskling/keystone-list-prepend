@@ -1,6 +1,6 @@
 # keystone-list-prepend
 
-This is a copy of https://github.com/keystonejs/keystone/blob/master/lib/list/add.js
+This is a rewrite of https://github.com/keystonejs/keystone/blob/master/lib/list/add.js
 
 instead of `push`ing fields to the end of the List, it `unshift`s them to the beginning.
 
