@@ -1,6 +1,6 @@
 {
   "name": "keystone-list-prepend",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "add prepend method to keystone.List() to unshift the given fields into the list",
   "main": "index.js",
   "scripts": {
