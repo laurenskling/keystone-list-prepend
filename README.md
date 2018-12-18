@@ -19,15 +19,21 @@ MyList.prepend({
     type: String
   }
 });
+MyList.register();
 ```
 This feature makes the most sense with `inherits`:
 ```
 const BaseList = keystone.List('BaseList');
 BaseList.add({
+  name: {
+    type: String
+  },
   originalField: {
     type: String
   }
 });
+BaseList.register();
+
 const MyList = keystone.List('MyList', {
   inherits: BaseList,
 });
@@ -36,6 +42,7 @@ MyList.prepend({
     type: String,
   }
 });
+MyList.register();
 ```
 
 `topField` will now be shown before `originalField` in the admin UI.
