@@ -1,4 +1,6 @@
-module.exports = exports = function(keystone) {
-  console.log('Installing keystone.List().prepend...');
-  keystone.List.prototype.prepend = require('./prepend');  
-};
+const keystone = require('keystone');
+
+console.log('Installing keystone.List().prepend...');
+keystone.List.prototype.prepend = require('./prepend');
+
+module.exports = exports = keystone;

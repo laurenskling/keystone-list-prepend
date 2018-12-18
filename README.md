@@ -39,3 +39,10 @@ MyList.prepend({
 ```
 
 `topField` will now be shown before `originalField` in the admin UI.
+
+## installation
+
+This package will register itself onto the keystone prototype. Just require (or import) it:
+```
+require('keystone-list-prepend');
+```
